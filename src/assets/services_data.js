@@ -3,7 +3,7 @@ const Services_Data = [
             "s_no": "01",
             "s_name": "Java Full Stack Development",
             "s_desc": "Java Full Stack Development involves utilizing Java technologies for both front-end and back-end development of web applications. As a Java full stack developer, I specialize in building robust and scalable systems that seamlessly integrate user interfaces with server-side logic."
-        },
+        },  
         {
             "s_no": "02",
             "s_name": "Front-end Development",

@@ -44,7 +44,9 @@
   display: flex;
   gap:15px;
   border-radius: 50px;
+  color:white;
   border:2px solid white;
+  background-color: #161513;
   padding: 30px 60px;
   font-size: 22px;
   font-weight: 500;
