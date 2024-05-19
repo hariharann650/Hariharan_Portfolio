@@ -1,10 +1,11 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Mywork.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import { mywork_data, newing } from "../../assets/mywork_data.js";
 import arrow from "../../assets/arrow_icon.svg";
 // import newing from '../../assets/mywork_data';
 const Mywork = () => {
+  const [naming ,setNaming] = useState("Show More");
   return (
     <div id="work" className="mywork">
       <div className="mywork-title">
@@ -37,12 +38,22 @@ const Mywork = () => {
       <button
         onClick={() => {
           document.querySelectorAll('.blocking').forEach(element =>{
-            element.style.display='block'
+           if( element.style.display == 'block') {
+            element.style.display = 'none'
+            // naming = 'Show More '
+            setNaming("Show More")
+           } 
+           else{
+            element.style.display = 'block';
+            // naming = "Show Less"
+            setNaming("Show Less")
+           } 
+            return element;
           })
         }}
         className="mywork-showmore"
       >
-        <p>Show More</p>
+        <p>{naming}</p>
         <img src={arrow} alt="" />
       </button>
     </div>
