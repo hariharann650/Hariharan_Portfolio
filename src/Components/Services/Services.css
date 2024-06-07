@@ -19,8 +19,67 @@
   bottom: 0;
   right: 0 ; 
   z-index: -1;
+  animation: logo 10s ease-in-out forwards;
+  animation-iteration-count: infinite;
+  animation-timeline: view(display);
+  /* animation-range: start; */
 }
-.services-format{
+@keyframes logo {
+  /* from{left:0%;}
+  to{left:40%;} */
+  0%{
+    left:0%;
+  }
+  50%{
+    left:45%;
+  }
+  /* 51%{
+
+  } */
+  100%{
+    left:0%;
+  }
+}
+.services-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+  position: relative;
+  animation: services 4s linear forwards;
+  animation-timeline: view(); /* Specify duration and keyframes name */
+  transform: rotate(-180deg);
+  transition: all 0.4s ease-in-out; /* Use transition correctly */
+}
+
+@keyframes services {
+  0% {
+    bottom: -100px;
+    transform: rotate(-180deg);
+  }
+  25% {
+    bottom: -50px;
+    transform: rotate(-90deg);
+  }
+  50% {
+    bottom: 0;
+    transform: rotate(0deg);
+  }
+  75% {
+    bottom: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0deg);
+  }
+}
+
+/* .services-format{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,12 +89,43 @@
   border:2px solid white;
   transition: 0.4s;
   cursor: pointer;
+  position: relative;
+  animation: services linear forwards;
+  animation-timeline: view();
+  animation-range: start;
+  transform: rotate(-180deg);
+  transition: all ease-in-out;
 }
+@keyframes services {
+
+  0%{
+    bottom:-100px;
+    transform: rotate(-180deg);
+  }
+  10%{
+    transform: rotate(-130deg);
+  }
+  20%{
+    bottom:-50px;
+    transform:rotate(-90deg);
+  }  
+  50%{
+    transform: rotate(0deg);
+  }
+  80%,100%{
+    bottom:0px;
+    transform: rotate(0deg);
+  }
+  120%{
+    transform: rotate(-180deg);
+  }
+} */
 .services-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap:40px;
   margin-bottom: 80px;
+  overflow: clip;
 }
 .services-format h3{
   font-size: 28px;

@@ -35,6 +35,7 @@ const Mywork = () => {
           );
         })}
       </div>
+      
       <button
         onClick={() => {
           document.querySelectorAll('.blocking').forEach(element =>{
@@ -52,9 +53,11 @@ const Mywork = () => {
           })
         }}
         className="mywork-showmore"
-      >
+      > 
         <p>{naming}</p>
-        <img src={arrow} alt="" />
+        <img className="arrow-style" src={arrow} alt="" />
+        <div className="background-btn">
+        </div>
       </button>
     </div>
   );
