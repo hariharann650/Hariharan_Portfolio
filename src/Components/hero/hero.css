@@ -1,9 +1,19 @@
+.back-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 .main_hero{
   overflow:clip;
+  position: relative;
 }
 .hero{
   display: flex;
-
+  position: relative;
   align-items: center;
   flex-direction: column;
   gap:10px;
@@ -27,16 +37,11 @@
     scale:3;
   }
 }
-.hero img{
-  /* margin-top:150px; */
-
-}
 .editing-img{
   border-radius: 50%;
   width:300px;
   height:300px;
   object-fit:contain;
-  /* margin:10px !important; */
   animation: hero linear forwards;
   animation-timeline:view();
   animation-range: exit;
@@ -81,16 +86,20 @@
   padding:20px 40px;
   border-radius: 50px;
   border:2px solid #fff;
+  color:white;
   cursor:pointer;
 }
 .anchorlink{
   text-decoration: none;
 }
 .hero-connect:hover{
-  border:2px solid  white;
+  border:2px solid  black;
 }
 .hero-resume:hover{
-  border-color: #B415FF;
+  border-color: black;
+}
+.bluring{
+  backdrop-filter: blur(1px);
 }
 .card {
   display: flex;

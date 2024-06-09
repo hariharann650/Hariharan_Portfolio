@@ -124,10 +124,6 @@
   .about-sections{
     flex-direction: column;
   }
-  .about-left{
-    /* display: none; */
-    
-  }
   .about-sections{
     display: flex;
     gap:20px;

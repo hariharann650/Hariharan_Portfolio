@@ -5,11 +5,19 @@ import hero from '../../assets/file.png';
 // import rotate from '../../assets/hari_rotate.png';
 // import hero1 from '../../assets/profile_img.svg';
 import resume from '../../assets/modify resume hariharan.pdf';
+import video from '../../assets/3.mp4';
+
 const Hero = () => {
   return (
     <div className="main_hero">
+       
     <div id='home' className='hero'>
+    <video autoPlay loop muted playsInline className="back-video" id="responsiveVideo">
+
+<source id="videoSource" className="source-vid" src={video} type="video/mp4" />
+</video>
       <img className='editing-img' src={hero} alt="" />
+      <div className="bluring">
       <div className="card">
         <a className="social-link social-link2" target='_blank' href='https://github.com/hariharann650'>
           <svg viewBox="0 0 496 512" height="1em" fill="#fff" xmlns="http://www.w3.org/2000/svg">
@@ -39,6 +47,7 @@ const Hero = () => {
             <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
           </svg>
         </a>
+      </div>
       </div>
       <h1><span>I'm Hariharan</span>, Java FullStack Developer</h1>
       <p>I am a Frontend and Backend Developer in Chennai, and Looking for Job Opporunity</p>

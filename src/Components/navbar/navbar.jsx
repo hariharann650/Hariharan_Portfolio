@@ -5,7 +5,8 @@ import underline from '../../assets/nav_underline.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_close from '../../assets/menu_close.svg';
 import menu_open from '../../assets/menu_open.svg';
-import logo1 from '../../assets/footer-img.jpg';
+import logo1 from '../../assets/footer-img-Photoroom.png';
+import videos from '../../assets/3.mp4';
 
 const Navbar = () => {
 
@@ -22,6 +23,10 @@ const Navbar = () => {
 
   return (
     <div className='Nav-bar'>
+          <video autoPlay loop muted playsInline className="back-video" id="responsiveVideo">
+
+<source id="videoSource" className="source-vid" src={videos} type="video/mp4" />
+</video>
       <img className='logo' src={logo1} alt="" />
       <img src={menu_open} onClick={openMenu} className='nav-mob-open' alt="" />
       <ul ref={menuRef} className="nav-menu">
