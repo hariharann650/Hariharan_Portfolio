@@ -30,11 +30,27 @@
   gap:80px;
 }
 .about-para{
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   gap:20px;
   font-size: 24px;
   font-weight: 500;
+}
+.about-para span{
+  display: inline;
+  color:hsl(0 0% 100%/0.2);
+  background-clip:text;
+  background-image: linear-gradient(90deg, white, white);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  animation: texting linear forwards;
+  animation-timeline: view();
+  animation-range-start: 30vh;
+  animation-range-end:45vh;
+}
+
+@keyframes texting{
+  to{background-size: 100% 100%;}
 }
 .about-skills{
   display: flex;
