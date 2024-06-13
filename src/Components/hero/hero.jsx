@@ -5,7 +5,7 @@ import hero from '../../assets/file.png';
 // import rotate from '../../assets/hari_rotate.png';
 // import hero1 from '../../assets/profile_img.svg';
 import resume from '../../assets/modify resume hariharan.pdf';
-import video from '../../assets/3.mp4';
+import video from "../../../public/3.mp4";
 
 const Hero = () => {
   return (

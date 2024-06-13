@@ -38,7 +38,7 @@ const About = () => {
           <div className="about-skills">
             <div className="about-skill">
               <p>HTML & CSS</p>
-              <hr className="percentage1" style={{ width: "80%" }} />
+              <hr className="percentage1" style={{  width: "80%"}} />
             </div>
             <div className="about-skill">
               <p>Javascript</p>

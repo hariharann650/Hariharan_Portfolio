@@ -1,12 +1,12 @@
 import React, { useState,useRef } from 'react'
 import './navbar.css';
-import logo from '../../assets/HARI BLACK LOGO.png';
+// import logo from '../../assets/HARI BLACK LOGO.png';
 import underline from '../../assets/nav_underline.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_close from '../../assets/menu_close.svg';
 import menu_open from '../../assets/menu_open.svg';
 import logo1 from '../../assets/footer-img-Photoroom.png';
-import videos from '../../assets/3.mp4';
+import videos from '../../../public/3.mp4';
 
 const Navbar = () => {
 

@@ -45,13 +45,14 @@
   background-size: 0% 100%;
   animation: texting linear forwards;
   animation-timeline: view();
-  animation-range-start: 30vh;
-  animation-range-end:45vh;
+  animation-range-start: 25vh;
+  animation-range-end:50vh;
 }
 
 @keyframes texting{
   to{background-size: 100% 100%;}
 }
+
 .about-skills{
   display: flex;
   flex-direction: column;
