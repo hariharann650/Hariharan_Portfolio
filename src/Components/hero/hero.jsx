@@ -14,7 +14,7 @@ const Hero = () => {
     <div id='home' className='hero'>
     <video autoPlay loop muted playsInline className="back-video" id="responsiveVideo">
 
-<source id="videoSource" className="source-vid" src={video} type="video/mp4" />
+<source id="videoSource" rel='preload' fetchpriority='high' className="source-vid" src={video} type="video/mp4" />
 </video>
       <img className='editing-img' src={hero} alt="" />
       <div className="bluring">

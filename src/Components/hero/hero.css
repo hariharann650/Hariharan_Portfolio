@@ -45,6 +45,7 @@
   animation: hero linear forwards;
   animation-timeline:view();
   animation-range: exit;
+  filter:drop-shadow(1px 1px 5px hsl(321, 79%, 56%))
 }
 .hero h1{
   text-align: center;
