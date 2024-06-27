@@ -18,9 +18,8 @@ const About = () => {
           <div className="about-para">
             <p>
               <span>
-                Hi, I'm Hariharan , a passionate Java full stack developer with
-                interest in building robust and scalable web applications. With
-                a solid foundation in Java programming and expertise in
+                Hi, I'm Hariharan , a passionate React Front-End developer with
+                interest in building robust and scalable web applications. Expertise in
                 front-end and back-end development technologies, I thrive on
                 tackling complex challenges and delivering elegant solutions
                 that exceed expectations.

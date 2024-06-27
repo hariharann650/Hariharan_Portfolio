@@ -49,7 +49,7 @@ const Hero = () => {
         </a>
       </div>
       </div>
-      <h1><span>I'm Hariharan</span>, Java FullStack Developer</h1>
+      <h1><span>I'm Hariharan</span>, React Front-End Developer</h1>
       <p>I am a Frontend and Backend Developer in Chennai, and Looking for Job Opporunity</p>
       <div className="hero-action">
       <AnchorLink  className='anchor-link' offset={50} href='#contact'>
