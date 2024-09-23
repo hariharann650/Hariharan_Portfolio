@@ -16,7 +16,7 @@ const Hero = () => {
 
 <source id="videoSource" rel='preload' fetchpriority='high' className="source-vid" src={video} type="video/mp4" />
 </video>
-      <img className='editing-img' src={hero} alt="" />
+      <img className='editing-img' src={hero} alt="Profile img" />
       <div className="bluring">
       <div className="card">
         <a className="social-link social-link2" target='_blank' href='https://github.com/hariharann650'>
