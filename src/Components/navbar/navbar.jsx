@@ -27,10 +27,10 @@ const Navbar = () => {
 
 <source id="videoSource" className="source-vid" src={videos} type="video/mp4" />
 </video>
-      <img className='logo' src={logo1} alt="" />
-      <img src={menu_open} onClick={openMenu} className='nav-mob-open' alt="" />
+      <img className='logo' src={logo1} alt="logo" />
+      <img src={menu_open} onClick={openMenu} className='nav-mob-open' alt="menu open icon" />
       <ul ref={menuRef} className="nav-menu">
-        <img src={menu_close} onClick={closeMenu} alt="" className="nav-mob-close" />
+        <img src={menu_close} onClick={closeMenu} alt="menu-close icon" className="nav-mob-close" />
         <li><AnchorLink  className='anchor-link' href='#home'><p onClick={()=>{setMenu('home')}}>Home</p></AnchorLink>{menu==="home"?<img src={underline} alt=''/> : <></>}</li>
         <li><AnchorLink  className='anchor-link' offset={50} href='#about'><p onClick={()=>{setMenu('about')}}>About me</p></AnchorLink>{menu==="about"?<img src={underline} alt=''/> : <></>}</li>
         <li><AnchorLink  className='anchor-link' offset={50} href='#services'><p onClick={()=>{setMenu('services')}}>Services</p></AnchorLink>{menu==="services"?<img src={underline} alt=''/> : <></>}</li>

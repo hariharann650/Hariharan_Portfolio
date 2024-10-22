@@ -2,8 +2,6 @@ import React from 'react'
 import './hero.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import hero from '../../assets/file.png';
-// import rotate from '../../assets/hari_rotate.png';
-// import hero1 from '../../assets/profile_img.svg';
 import resume from '../../assets/modify resume hariharan.pdf';
 import video from "../../../public/3.mp4";
 

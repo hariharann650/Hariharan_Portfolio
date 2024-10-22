@@ -9,7 +9,7 @@ const Services = () => {
     <div id='services' className='services'>
       <div className="services-title">
         <h1>My Services</h1>
-        <img src={theme} alt="" />
+        <img src={theme} alt="theme's" />
       </div>
       <div className="services-container">
       {Services_Data.map((services,index)=>{
@@ -19,7 +19,7 @@ const Services = () => {
           <p>{services.s_desc}</p>
           <div className="services-readmore">
             <p>read more</p>
-            <img src={arrow} alt="" />
+            <img src={arrow} alt="arrow icon" />
           </div>
         </div>
       })}

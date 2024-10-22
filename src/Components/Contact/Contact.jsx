@@ -35,7 +35,7 @@ const Contact = () => {
     <div id='contact' className='contact'>
       <div className="contact-title">
         <h1>Get in Touch</h1>
-        <img src={theme} alt="" />
+        <img src={theme} alt="theming" />
       </div>
       <div className="contact-section">
         <div className="contact-left">
@@ -43,13 +43,13 @@ const Contact = () => {
           <p>I am currently actively searching for job opportunities, so please feel free to reach out to me at any time. I am open to discussing potential positions and exploring how my skills and experience align with your organization's needs. Your message regarding job opportunities is welcomed and appreciated. Looking forward to connecting with you soon</p>
           <div className="contact-details">
             <div className="contact-detail">
-                <img src={mail_icon} alt="" /> <p>hariharann650@gmail.com</p>
+                <img src={mail_icon} alt="mailicon" /> <p>hariharann650@gmail.com</p>
             </div>
             <div className="contact-detail">
-              <img src={call_icon} alt="" /><p>8072114401</p>
+              <img src={call_icon} alt="callicon" /><p>8072114401</p>
             </div>
             <div className="contact-detail">
-              <img src={location_icon} alt="" /><p>Chennai</p>
+              <img src={location_icon} alt="location icon" /><p>Chennai</p>
             </div>
           </div>
         </div>

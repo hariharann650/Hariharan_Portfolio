@@ -10,14 +10,14 @@ const Mywork = () => {
     <div id="work" className="mywork">
       <div className="mywork-title">
         <h1>My Latest Work</h1>
-        <img src={theme_pattern} alt="" />
+        <img src={theme_pattern} alt="theme" />
       </div>
       <div className="mywork-container">
         {mywork_data.map((work, index) => {
           return (
             <a href={work.link} target="_blank " key={index}>
               {" "}
-              <img key={index} src={work.w_img} />
+              <img key={index} src={work.w_img} alt={index}/>
             </a>
           );
         })}
@@ -30,7 +30,7 @@ const Mywork = () => {
               target="_blank"
             >
               {" "}
-              <img key={index} src={works.w_img} />
+              <img key={index} src={works.w_img} alt={index} />
             </a>
           );
         })}

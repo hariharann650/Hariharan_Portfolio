@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css';
 import footer from '../../assets/footer-img.jpg';
-import usericon from '../../assets/user_icon.svg';
+
 
 
 const Footer = () => {
@@ -9,16 +9,9 @@ const Footer = () => {
     <div className='footer'>
         <div className="footer-top">
           <div className="footer-top-left">
-            <img src={footer} alt="" />
+            <img src={footer} alt="footer" />
             <p> I'am Front-end and Back-end developer</p>
           </div>
-          {/* <div className="footer-top-right">
-            <div className="footer-email-input">
-              <img src={usericon} alt="" />
-              <input type="email" placeholder='Enter Your Email' />
-            </div>
-            <div className="footer-subscribe">Subscribe</div>
-          </div> */}
         </div>
         <hr />
         <div className="footer-bottom">
