@@ -5,14 +5,12 @@ import project6_img from '../assets/project6.png'
 import project7_img from '../assets/project7.png'
 import project8_img from '../assets/project8.png'
 
-
 export const mywork_data = [
     {
         w_no:1,
         w_name:"Web design",
         w_img:project5_img,
         link:'https://hariharann650.github.io/A2D/'
-        
     },
     {
         w_no:2,
@@ -21,7 +19,6 @@ export const mywork_data = [
         link:'https://hariharann650.github.io/HariCarShowroom/index.html'
     }
 ];
- 
  export const newing = [
     {
         w_no:3,
