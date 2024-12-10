@@ -18,8 +18,8 @@ const Services = () => {
           <h2>{services.s_name}</h2>
           <p>{services.s_desc}</p>
           <div className="services-readmore">
-            <p>read more</p>
-            <img src={arrow} alt="arrow icon" />
+            {/* <p>read more</p> */}
+            {/* <img src={arrow} alt="arrow icon" /> */}
           </div>
         </div>
       })}
