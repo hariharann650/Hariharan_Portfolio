@@ -2,7 +2,7 @@ import React from 'react'
 import './Services.css';
 import theme from '../../assets/theme_pattern.svg';
 import Services_Data from '../../assets/services_data';
-import arrow from '../../assets/arrow_icon.svg';
+// import arrow from '../../assets/arrow_icon.svg';
 
 const Services = () => {
   return (
