@@ -177,6 +177,7 @@
   background-color: #1d4292;
   animation: bounce_613 0.4s linear;
 }
+
 @keyframes bounce_613 {
   40% {
     transform: scale(1.4);

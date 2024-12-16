@@ -24,7 +24,6 @@ const Navbar = () => {
   return (
     <div className='Nav-bar'>
           <video autoPlay loop muted playsInline className="back-video" id="responsiveVideo">
-
 <source id="videoSource" className="source-vid" src={videos} type="video/mp4" />
 </video>
       <img className='logo' src={logo1} alt="logo" />

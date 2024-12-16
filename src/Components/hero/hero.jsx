@@ -8,13 +8,12 @@ import video from "../../../public/3.mp4";
 const Hero = () => {
   return (
     <div className="main_hero">
-      
     <div id='home' className='hero'>
     <video autoPlay loop muted playsInline preload="metadata" className="back-video" id="responsiveVideo">
 
 <source id="videoSource" rel='preload' fetchpriority='high' className="source-vid" src={video} type="video/mp4" />
 </video>
-      <img className='editing-img' src={hero} alt="Profile img" />
+      <img className='editing-img' src={hero} alt="Profile img"/>
       <div className="bluring">
       <div className="card">
         <a className="social-link social-link2" target='_blank' href='https://github.com/hariharann650'>
