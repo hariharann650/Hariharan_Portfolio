@@ -8,6 +8,7 @@ import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import SplashCursor from './Components/CursorStyle/Cursor';
 const App = () => {
+  console.log("cloning the repo")
   return (
     <div>
       <Navbar />
