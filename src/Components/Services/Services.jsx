@@ -5,6 +5,7 @@ import Services_Data from '../../assets/services_data';
 // import arrow from '../../assets/arrow_icon.svg';
 
 const Services = () => {
+  console.log('test')
   return (
     <div id='services' className='services'>
       <div className="services-title">
