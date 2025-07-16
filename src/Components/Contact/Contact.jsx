@@ -7,7 +7,7 @@ import call_icon from '../../assets/call_icon.svg';
 
 
 const Contact = () => {
-
+  
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -40,7 +40,7 @@ const Contact = () => {
       <div className="contact-section">
         <div className="contact-left">
           <h1>Let's talk</h1>
-          <p>I am currently actively searching for job opportunities, so please feel free to reach out to me at any time. I am open to discussing potential positions and exploring how my skills and experience align with your organization's needs. Your message regarding job opportunities is welcomed and appreciated. Looking forward to connecting with you soon</p>
+          <p>I am open to discussing potential positions and exploring how my skills and experience align with your organization's needs. Your message regarding job opportunities is welcomed and appreciated. Looking forward to connecting with you soon</p>
           <div className="contact-details">
             <div className="contact-detail">
                 <img src={mail_icon} alt="mailicon" /> <p>hariharann650@gmail.com</p>
