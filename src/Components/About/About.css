@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   gap:80px;
-  margin:18px 170px;
+  /* margin:18px 100px;*/
+    margin:50px 70px;
 }
 .about-title{
   position: relative;
@@ -90,7 +91,8 @@
   gap:10px;
   transition: 0.5s;
 }
-.about-achievement h1{
+.about-achievement h1,
+.countanimation{
   font-size: 60px;
   font-weight: 600;
   background:linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%) ;
@@ -124,7 +126,6 @@
     margin:10px 20px;
     align-items: center;
   }
-
   .about-title h1{
     font-size: 42px;
     padding:0;
@@ -182,18 +183,18 @@
     margin:20px 0;
   }
   .percentage1{
-    width:90px !important;
+    width:90% !important;
   }
   .percentage2{
-    width:80px !important;
+    width:90% !important;
   }
   .percentage3{
-    width:60px !important;
+    width:60% !important;
   }
   .percentage4{
-    width:60px !important;
+    width:40% !important;
   }
   .percentage5{
-    width:90px !important;
+    width:50% !important;
   }
 }

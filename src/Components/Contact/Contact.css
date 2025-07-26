@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   gap:80px;
-  margin:80px 170px;
+  /* margin:80px 170px; */
+    margin:50px 70px;
 }
 .contact-title{
   position: relative;
@@ -137,14 +138,15 @@
     align-items: start;
   }
   .contact-title h1{
-    /* padding:0px 30px; */
+    margin-left: 13%;
+    white-space: nowrap;
     font-size: 41px;
     white-space:nowrap;
     font-weight: 600;
   }
   .contact-title img{
     width:130px;
-    margin-right: 20px;
+    margin-right: -20px;
   }
   .contact-section{
     flex-direction: column;

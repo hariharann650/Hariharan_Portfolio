@@ -47,14 +47,17 @@
   animation-range: exit;
   filter:drop-shadow(1px 1px 5px hsl(321, 79%, 56%))
 }
-.hero h1{
+.hero h1,
+.dynamic_text{
   text-align: center;
-  width:90%;
-  font-size: 90px;
+  color:'white';
+  /* width:90%; */
+  font-size: 60px;
   font-weight: 600;
 }
 
-.hero h1 span{
+.ColorChange{
+  display: block;
   background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -199,7 +202,7 @@
   .hero h1{
     text-align: center;
     width:100%;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 600;
   }
 
@@ -217,8 +220,9 @@
   }
   .hero h1{
     margin-top:0px;
-    width:90%;
-    font-size: 41px;
+    width:100%;
+    height: 16.5vh;
+    font-size: 40px;
   }
   .hero p{
     width:90%;
@@ -240,4 +244,5 @@
     padding:10px 15px;
     border-radius: 50px;
   }
+
 }

@@ -10,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^12.23.9",
+    "gsap": "^3.13.0",
+    "ogl": "^1.0.11",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "three": "^0.178.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
