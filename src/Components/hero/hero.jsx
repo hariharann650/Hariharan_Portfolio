@@ -131,7 +131,7 @@ const Hero = () => {
         </h1>
         <p>
           I am a Frontend and Backend Developer, Now Currently Working in
-          Chennai
+          Chennai.
         </p>
         <div className="hero-action">
           <AnchorLink className="anchor-link" offset={50} href="#contact">
