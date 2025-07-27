@@ -1,12 +1,32 @@
 import React from 'react'
 import './Footer.css';
 import footer from '../../assets/footer-img.jpg';
+import Particles from '../Animations/Parcicles';
 
 
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className='footer' style={{position:'relative'}}>
+            <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          zIndex: 0,
+          overflow: "visible",
+        }}
+      >
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={100}
+          particleSpread={20}
+          speed={0.1}
+          particleBaseSize={130}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
         <div className="footer-top">
           <div className="footer-top-left">
             <img src={footer} alt="footer" />

@@ -4,33 +4,67 @@ import theme from "../../assets/theme_pattern.svg";
 import mail_icon from "../../assets/mail_icon.svg";
 import location_icon from "../../assets/location_icon.svg";
 import call_icon from "../../assets/call_icon.svg";
+import Particles from "../Animations/Parcicles";
 
 const Contact = () => {
-  const onSubmit = async (event) => {
-    event.preventDefault(); 
-    const formData = new FormData(event.target);
+const onSubmit = async (event) => {
+  event.preventDefault();
+  const formData = new FormData(event.target);
 
-    formData.append("access_key", "4371914d-2242-4662-900c-bef2d8316315");
+  const name = formData.get("name").trim();
+  const email = formData.get("email").trim();
+  const message = formData.get("textarea").trim();
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+  // Basic validation
+  if (!name || !email || !message) {
+    alert("Please fill in all required fields: Name, Email, and Message.");
+    return;
+  }
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    }).then((res) => res.json());
+  formData.append("access_key", "4371914d-2242-4662-900c-bef2d8316315");
 
-    if (res.success) {
-      alert(res.message);
-    }
-  };
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+
+  const res = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: json,
+  }).then((res) => res.json());
+
+  if (res.success) {
+    alert(res.message);
+    event.target.reset(); // Clear form after successful submit
+  } else {
+    alert("Something went wrong. Please try again.");
+  }
+};
+
 
   return (
-    <div id="contact" className="contact">
+    <div id="contact" className="contact" style={{position:"relative"}}>
+            <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          zIndex: -20,
+          overflow: "visible",
+        }}
+      >
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={300}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={130}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
       <div className="contact-title">
         <h1>Get in Touch</h1>
         <img src={theme} alt="theming" />

@@ -4,12 +4,33 @@ import theme_pattern from "../../assets/theme_pattern.svg";
 import { mywork_data, newing } from "../../assets/mywork_data.js";
 import arrow from "../../assets/arrow_icon.svg";
 import PixelTransition from "../Animations/PixelTransition.jsx";
+import Particles from "../Animations/Parcicles.jsx";
 
 const Mywork = () => {
   const [naming, setNaming] = useState("Show More");
 
   return (
-    <div id="work" className="mywork">
+    
+    <div id="work" className="mywork" style={{position:'relative'}}>
+            <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          zIndex: 0,
+          overflow: "visible",
+        }}
+      >
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={300}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={130}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
       <div className="mywork-title">
         <h1>My Latest Work</h1>
         <img src={theme_pattern} alt="theme" />
@@ -42,7 +63,7 @@ const Mywork = () => {
                   </p>
                 </div>
               }
-              gridSize={12}
+              gridSize={12} 
               pixelColor="#ffffff"
               animationStepDuration={0.4}
               className="custom-pixel-card"

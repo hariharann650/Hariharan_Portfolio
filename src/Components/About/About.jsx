@@ -22,10 +22,10 @@ const About = () => {
       >
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
-          particleCount={350}
+          particleCount={400}
           particleSpread={10}
           speed={0.1}
-          particleBaseSize={100}
+          particleBaseSize={130}
           moveParticlesOnHover={true}
           alphaParticles={false}
           disableRotation={false}
