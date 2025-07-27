@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mdi/js": "^7.4.47",
+    "@mdi/react": "^1.6.1",
     "framer-motion": "^12.23.9",
     "gsap": "^3.13.0",
     "ogl": "^1.0.11",

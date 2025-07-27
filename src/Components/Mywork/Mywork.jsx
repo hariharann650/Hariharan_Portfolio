@@ -5,14 +5,16 @@ import { mywork_data, newing } from "../../assets/mywork_data.js";
 import arrow from "../../assets/arrow_icon.svg";
 import PixelTransition from "../Animations/PixelTransition.jsx";
 import Particles from "../Animations/Parcicles.jsx";
+import Icon from "@mdi/react";
+import { mdiAccount } from "@mdi/js";
+import { mdiOpenInNew } from '@mdi/js';
 
 const Mywork = () => {
   const [naming, setNaming] = useState("Show More");
 
   return (
-    
-    <div id="work" className="mywork" style={{position:'relative'}}>
-            <div
+    <div id="work" className="mywork" style={{ position: "relative" }}>
+      <div
         style={{
           position: "absolute",
           inset: 0,
@@ -38,14 +40,18 @@ const Mywork = () => {
 
       <div className="mywork-container">
         {mywork_data.map((work, index) => (
-          <a href={work.link} target="_blank" rel="noopener noreferrer" key={index}>
+          <a
+            href={work.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={index}
+          >
             <PixelTransition
               firstContent={
                 <img
                   src={work.w_img}
                   alt={`work-${index}`}
-                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
-
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
               }
               secondContent={
@@ -55,19 +61,32 @@ const Mywork = () => {
                     height: "100%",
                     display: "grid",
                     placeItems: "center",
-                    backgroundColor: "#111"
+                    backgroundColor: "#111",
+                    alignItems:'center'
                   }}
                 >
-                  <p style={{ fontWeight: 900, fontSize: "2rem", color: "#ffffff" }}>
-                    Visit
-                  </p>
+                  <p className="VisitText"
+                    style={{
+                      fontWeight: 900,
+                      fontSize: "2rem",
+                      color: "#ffffff",
+                      textAlign:'center',
+                      display:'flex',
+                      columnGap:"3px"
+                    }}
+                  >
+                    Visit{" "}
+           
+               <Icon path={mdiOpenInNew} size={1.6} />
+                      </p>
                 </div>
               }
-              gridSize={12} 
+              gridSize={12}
               pixelColor="#ffffff"
               animationStepDuration={0.4}
               className="custom-pixel-card"
             />
+            
           </a>
         ))}
 
@@ -95,10 +114,16 @@ const Mywork = () => {
                     height: "100%",
                     display: "grid",
                     placeItems: "center",
-                    backgroundColor: "#111"
+                    backgroundColor: "#111",
                   }}
                 >
-                  <p style={{ fontWeight: 900, fontSize: "2rem", color: "#ffffff" }}>
+                  <p
+                    style={{
+                      fontWeight: 900,
+                      fontSize: "2rem",
+                      color: "#ffffff",
+                    }}
+                  >
                     View
                   </p>
                 </div>

@@ -27,7 +27,10 @@
   gap:50px;
   /* overflow: hidden; */
 }
-
+.VisitText:hover{
+  color:'green';
+  opacity: 0.7;
+}
 .mywork-container img{
   box-sizing: border-box;
   object-fit:fill;
