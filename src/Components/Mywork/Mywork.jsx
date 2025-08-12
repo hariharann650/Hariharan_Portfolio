@@ -7,7 +7,7 @@ import PixelTransition from "../Animations/PixelTransition.jsx";
 import Particles from "../Animations/Parcicles.jsx";
 import Icon from "@mdi/react";
 import { mdiAccount } from "@mdi/js";
-import { mdiOpenInNew } from '@mdi/js';
+import { mdiOpenInNew } from "@mdi/js";
 
 const Mywork = () => {
   const [naming, setNaming] = useState("Show More");
@@ -62,23 +62,22 @@ const Mywork = () => {
                     display: "grid",
                     placeItems: "center",
                     backgroundColor: "#111",
-                    alignItems:'center'
+                    alignItems: "center",
                   }}
                 >
-                  <p className="VisitText"
+                  <p
+                    className="VisitText"
                     style={{
                       fontWeight: 900,
                       fontSize: "2rem",
                       color: "#ffffff",
-                      textAlign:'center',
-                      display:'flex',
-                      columnGap:"3px"
+                      textAlign: "center",
+                      display: "flex",
+                      columnGap: "3px",
                     }}
                   >
-                    Visit{" "}
-           
-               <Icon path={mdiOpenInNew} size={1.6} />
-                      </p>
+                    Visit <Icon path={mdiOpenInNew} size={1.6} />
+                  </p>
                 </div>
               }
               gridSize={12}
@@ -86,7 +85,6 @@ const Mywork = () => {
               animationStepDuration={0.4}
               className="custom-pixel-card"
             />
-            
           </a>
         ))}
 
@@ -118,13 +116,17 @@ const Mywork = () => {
                   }}
                 >
                   <p
+                    className="VisitText"
                     style={{
                       fontWeight: 900,
                       fontSize: "2rem",
                       color: "#ffffff",
+                      textAlign: "center",
+                      display: "flex",
+                      columnGap: "3px",
                     }}
                   >
-                    View
+                    Visit <Icon path={mdiOpenInNew} size={1.6} />
                   </p>
                 </div>
               }
