@@ -1,6 +1,5 @@
-import React from "react";
 import "./About.css";
-import hari from "../../assets/file.png";
+import hari from "../../assets/Profile.png"
 import theme from "../../assets/theme_pattern.svg";
 import Particles from "../Animations/Parcicles.jsx";
 import CountUp from "../Animations/CountUp.jsx";
@@ -43,44 +42,58 @@ const About = () => {
           <div className="about-para">
             <p>
               <span>
-                Hi, I'm Hariharan , a passionate React Front-End developer with
-                interest in building robust and scalable web applications.
-                Expertise in front-end and back-end development technologies, I
-                thrive on tackling complex challenges and delivering elegant
-                solutions that exceed expectations.
+                Hi, I'm Hariharan — a React Full Stack Developer with 1.5 years
+                  of professional experience building robust and scalable web
+                  applications. With expertise in both front-end and back-end
+                  technologies, I thrive on solving real-world problems with clean,
+                  efficient code.
               </span>
             </p>
             <p>
               <span>
-                On the front-end, I am skilled in HTML, CSS, and JavaScript,
-                with additional expertise in modern libraries like React.
-                Additionally, I have experience with database management systems
-                such as MySQL
+                 Currently working at a Chennai-based startup, developing and
+                  maintaining production web apps using React, Material UI, .NET
+                  Web APIs, and MySQL. I enjoy turning complex requirements into
+                  smooth user experiences.
               </span>
             </p>
           </div>
-          <div className="about-skills">
-            <div className="about-skill">
-              <p>HTML & CSS</p>
-              <hr className="percentage1" style={{ width: "95%" }} />
-            </div>
-            <div className="about-skill">
-              <p>Javascript</p>
-              <hr className="percentage2" style={{ width: "90%" }} />
-            </div>
-            <div className="about-skill">
-              <p>Vite + React Js</p>
-              <hr className="percentage3" style={{ width: "90%" }} />
-            </div>
-            <div className="about-skill">
-              <p>Dot Net</p>
-              <hr className="percentage4" style={{ width: "60%" }} />
-            </div>
-            <div className="about-skill">
-              <p>My SQL</p>
-              <hr className="percentage5" style={{ width: "90%" }} />
-            </div>
-          </div>
+<div className="about-skills">
+
+  {/* Row 1 */}
+  <div className="about-skill">
+    <div className="skill-header">
+      <p>HTML & CSS</p>
+    </div>
+  </div>
+
+  <div className="about-skill">
+    <div className="skill-header">
+      <p>Javascript</p>
+    </div>
+  </div>
+
+  {/* Row 2 */}
+  <div className="about-skill">
+    <div className="skill-header">
+      <p>Vite + React Js</p>
+    </div>
+  </div>
+
+  <div className="about-skill">
+    <div className="skill-header">
+      <p>Dot Net</p>
+    </div>
+  </div>
+
+  {/* Row 3 — single centered */}
+  <div className="about-skill" style={{ flex: "0 0 calc(50% - 8px)" }}>
+    <div className="skill-header">
+      <p>My SQL</p>
+    </div>
+  </div>
+
+</div>
         </div>
       </div>
       <div className="about-achievements">

@@ -1,4 +1,4 @@
-.footer{
+ .footer{
   margin:50px 170px;
   display: flex;
   flex-direction:column;
@@ -10,7 +10,7 @@
 }
 .footer-top-left p{
   font-size: 20px;
-  max-width: 400px;
+  max-width: 500px; 
 }
 .footer-top-left img{
   margin-left:-20px;

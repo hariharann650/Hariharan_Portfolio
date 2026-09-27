@@ -1,26 +1,24 @@
 const Services_Data = [
         {
             "s_no": "01",
-            "s_name": "Dot Net Full Stack Development",
-            "s_desc": "Dot Net Stack Development involves utilizing Java technologies for both front-end and back-end development of web applications. As a Dot Net full stack developer, I specialize in building robust and scalable systems that seamlessly integrate user interfaces with server-side logic."
+            "s_name": "React Front-End Development",
+            "s_desc": "Building fast, responsive, and interactive user interfaces using React JS, Material UI, and modern JavaScript (ES6+). I focus on clean component architecture, reusable code, and smooth user experiences that work well across all devices."
         },  
         {
             "s_no": "02",
-            "s_name": "Front-end Development",
-            "s_desc": "Front-end development involves creating engaging user interfaces using technologies like HTML, CSS, and JavaScript. As a front-end developer, I specialize in crafting visually appealing and responsive web applications that provide an exceptional user experience."
+            "s_name": ".NET Back-End Development",
+            "s_desc": "Developing robust and secure REST APIs using ASP.NET Web API and C#. I design clean API architectures with proper authentication, error handling, and data validation to support scalable web applications."
         },
         {
             "s_no": "03",
-            "s_name": "React Development",
-            "s_desc": "React is a JavaScript library for building user interfaces, known for its efficiency and flexibility. As a React developer, I have hands-on experience in developing single-page applications (SPAs) and reusable UI components using React's declarative approach."
+            "s_name": "Full Stack Web Development",
+            "s_desc": "End-to-end web application development combining React on the front-end with .NET APIs and MySQL on the back-end. I handle everything from UI design to database schema, API integration, and deployment."
         },
         {
             "s_no": "04",
-            "s_name": "MySQL Development",
-            "s_desc": "MySQL is a popular relational database management system used for storing and managing data in web applications. As a MySQL developer, I specialize in designing efficient database schemas, optimizing queries, and ensuring data integrity and security. With expertise in SQL and database administration."
+            "s_name": "MySQL Database Design",
+            "s_desc": "Designing efficient relational database schemas, writing optimised SQL queries, and managing data integrity. With hands-on experience in MySQL, I ensure your application's data layer is structured, fast, and reliable."
         }
-    
-    
 ]
  
 export default Services_Data;

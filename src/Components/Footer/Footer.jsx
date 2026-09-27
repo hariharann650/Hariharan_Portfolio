@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-top-left">
             <img src={footer} alt="footer" />
-            <p> I'am Front-end and Back-end developer</p>
+            <p> React Full Stack Developer — Chennai, Tamil Nadu</p>
           </div>
         </div>
         <hr />

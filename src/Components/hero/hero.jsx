@@ -8,7 +8,7 @@ import TextType from "../Animations/TextType";
 
 const Hero = () => {
   return (
-    <div className="main_hero">
+    <div className="main_hero">     
       <div id="home" className="hero">
         <video
           autoPlay
@@ -28,8 +28,25 @@ const Hero = () => {
             type="video/mp4"
           />
         </video>
-        <img className="editing-img" src={hero} alt="Profile img" />
-        <div className="bluring">
+        {/* <img className="editing-img" src={hero} alt="Profile img" /> */}
+      
+        <h1>
+          <span className="ColorChange">I'm Hariharan, </span>
+          <span style={{ color: "white",fontSize:"3vw" }}>
+            <TextType
+              text={[
+                "React Front-End Developer",
+                "Dot Net Back-End Developer",
+                "SQL Database Developer",
+              ]}
+              typingSpeed={200}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+            />
+          </span>
+        </h1>
+          <div className="bluring">
           <div className="card">
             <a
               className="social-link social-link2"
@@ -78,7 +95,7 @@ const Hero = () => {
                 ></path>
               </svg>
             </a>
-            <a
+            {/* <a
               className="social-link social-link1"
               target="_blank"
               href="https://www.instagram.com/hari_haran_650?igsh=NnF0NXVwODAwM3hk"
@@ -96,8 +113,8 @@ const Hero = () => {
                   fill="white"
                 ></path>
               </svg>
-            </a>
-            <a
+            </a> */}
+            {/* <a
               className="social-link social-link7"
               target="_blank"
               href="https://www.facebook.com/share/ACs5XfB2Dar7pXvZ/?mibextid=qi2Omg"
@@ -110,28 +127,12 @@ const Hero = () => {
               >
                 <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
               </svg>
-            </a>
+            </a> */}
           </div>
         </div>
-        <h1>
-          <span className="ColorChange">I'm Hariharan, </span>
-          <span style={{ color: "white" }}>
-            <TextType
-              text={[
-                "React Front-End Developer",
-                "Dot Net Back-End Developer",
-                "SQL Database Developer",
-              ]}
-              typingSpeed={200}
-              pauseDuration={1500}
-              showCursor={true}
-              cursorCharacter="|"
-            />
-          </span>
-        </h1>
         <p>
-          I am a Frontend and Backend Developer, Now Currently Working in
-          Chennai.
+          React Full Stack Developer with 1.5 years of experience building web apps
+          using React, Material UI, .NET APIs, and MySQL.
         </p>
         <div className="hero-action">
           <AnchorLink className="anchor-link" offset={50} href="#contact">

@@ -73,10 +73,9 @@ const onSubmit = async (event) => {
         <div className="contact-left">
           <h1>Let's talk</h1>
           <p>
-            I am open to discussing potential positions and exploring how my
-            skills and experience align with your organization's needs. Your
-            message regarding job opportunities is welcomed and appreciated.
-            Looking forward to connecting with you soon
+             I am actively looking for new opportunities and would love to connect
+            with hiring managers and recruiters. Feel free to reach out to discuss
+            how my React and full stack experience can contribute to your team.
           </p>
           <div className="contact-details">
             <div className="contact-detail">
@@ -109,6 +108,7 @@ const onSubmit = async (event) => {
           </button>
         </form>
       </div>
+      
     </div>
   );
 };

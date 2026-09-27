@@ -29,7 +29,7 @@ const Services = () => {
         />
       </div>
       <div className="services-title">
-        <h1>My Services</h1>
+        <h1>What I Offer</h1>
         <img src={theme} alt="theme's" />
       </div>
       <div className="services-container">
