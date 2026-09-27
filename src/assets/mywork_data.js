@@ -4,6 +4,7 @@ import project5_img from "../assets/project5.png";
 import project6_img from "../assets/project6.png";
 import project7_img from "../assets/project7.png";
 import project8_img from "../assets/project8.png";
+import project9_img from "../assets/project-9.png";
 import fiori from "../assets/fiori.png";
 import QR from "../assets/QR Project.png";
 
@@ -82,5 +83,14 @@ export const newing = [
     w_img: project4_img,
     link: "https://hariharann650.github.io/shoe_project/",
     github: "https://github.com/hariharann650/shoe_project",
+  },
+    {
+    w_no: 9,
+    w_name: "Real Me Buds Air 7",
+    w_desc: "Using Next Js and 3D animations in scroll",
+    w_tech: "HTML · CSS · JavaScript · Next Js",
+    w_img: project9_img,
+    link: "https://hariharann650.github.io/Realme_buds_air_7_Project/",
+    github: "https://github.com/hariharann650/Realme_buds_air_7_Project",
   },
 ];
